@@ -72,7 +72,7 @@ func FqdnFromTemplate(template, serviceName, stackName, environmentName, rootDom
 	})
 
 	labels := []string{fqdn, rootDomainName}
-	return strings.ToLower(strings.Join(labels, "."))
+	return strings.ToLower(strings.Join(labels, "-"))
 }
 
 func StateFqdn(environmentUUID, rootDomainName string) string {
